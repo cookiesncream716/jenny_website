@@ -3,11 +3,13 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
+var dotenv = require('dotenv')
 // create app
 var app = express();
 // set env variables
-// require('dotenv').config();
-// console.log(USER + PASSWORD)
+dotenv.config();
+console.log(process.env.NAME)
+console.log(process.env.PASSWORD)
 // static content
 app.use(express.static(path.join(__dirname, "./static")));
 // view engine and view folder
@@ -20,8 +22,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 var transporter = nodemailer.createTransport({
 	host: 'smtp.ladle.net',
 	auth: {
-		user: '',
-		pass: ''
+		user: process.env.NAME,
+		pass: process.env.PASSWORD
 	},
 	port: 587,
 	tls: {
