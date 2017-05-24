@@ -1,10 +1,11 @@
 {
-	"name": "job_site",
-	"description": "Website for Jenny",
-	"dependencies": {
-		"body-parser": "latest",
-		"express": "~4.2.0",
-		"ejs": "1.0.0",
-		"nodemailer": "4.0.1"
-	}
+  "name": "job_site",
+  "description": "Website for Jenny",
+  "dependencies": {
+    "body-parser": "latest",
+    "dotenv": "4.0.0",
+    "ejs": "1.0.0",
+    "express": "~4.2.0",
+    "nodemailer": "4.0.1"
+  }
 }
