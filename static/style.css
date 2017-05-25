@@ -1,0 +1,22 @@
+h1 {
+	font-family: Impact;
+	font-size: 8.5em;
+	text-align: center;
+}
+img {
+	border: 1px solid black; 
+}
+.pic{
+	padding-top: 10%;
+}
+/*.pic, #contact_form{
+	vertical-align: bottom;
+}*/
+h4 {
+	color: blue;
+}
+
+button {
+	color: white;
+	background-color: red;
+}

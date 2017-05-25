@@ -10,28 +10,41 @@
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<link rel='stylesheet' type='text/css' href='style.css'>
 	</head>
 	<body class='container'>
 		<h1>Walker Services</h1>
-		<h4>Contact Me</h4>
-		<form action='/contact' method='post'>
-			<div class='form-group'>
-				<label for='name' class='control-label'>Name</label>
-				<input type="text" name="name" class='form-control'>
+		<div class='row'>
+			<img src='girl_pulling_hair.png' class='col-md-offset-1 col-md-3'>
+			<h3 class='col-md-8'>Feel like you are overwhelmed? Let us help.</h3>
+		</div>
+		<div class='row'>
+			<!-- <img src='cleaning_bucket.jpg' class='col-md-3 pic'> -->
+			<div id='contact_form'>
+			<h4 id='contact' class='col-md-offset-1'>Contact Me</h4>
+			<form action='/contact' method='post' class='col-md-offset-1 col-md-6'>
+				<div class='form-group'>
+					<label for='name' class='control-label'>Name</label>
+					<input type="text" name="name" class='form-control'>
+				</div>
+				<div class='form-group'>
+					<label for='email' class='control-label'>Email</label>
+					<input type="email" name="email" class='form-control'>
+				</div>
+				<div class='form-group'>
+					<label for='phone' class='control-label'>Phone</label>
+					<input type="text" name="phone" class='form-control'>
+				</div>
+				<div class='form-group'>
+					<label for='message' class='control-label'>Brief Description of the Job</label>
+					<textarea name='message' class='form-control' rows='5'></textarea>
+				</div>
+				<button class='btn'>Send</button>
+			</form>
 			</div>
-			<div class='form-group'>
-				<label for='email' class='control-label'>Email</label>
-				<input type="email" name="email" class='form-control'>
-			</div>
-			<div class='form-group'>
-				<label for='phone' class='control-label'>Phone</label>
-				<input type="text" name="phone" class='form-control'>
-			</div>
-			<div class='form-group'>
-				<label for='message' class='control-label'>Brief Description of the Job</label>
-				<textarea name='message' class='form-control' rows='5'></textarea>
-			</div>
-			<button class='btn'>Send</button>
-		</form>
+			<img src='cleaning_bucket.jpg' class='col-md-offset-1 col-md-3 pic'>
+			<!-- <img src='lawnmower.png' class='col-md-3 pic'> -->
+		</div>
 	</body>
 </html>
