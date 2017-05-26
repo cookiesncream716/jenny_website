@@ -49,7 +49,7 @@ app.post('/contact', function(req, res){
 		from: req.body.email,
 		to: 'heather@ladle.net',
 		subject: 'Message from ' + req.body.name + ' for Walker Services',
-		text:req.body.message + 'My phone number is ' + req.body.phone
+		text:req.body.message + ' My phone number is ' + req.body.phone
 	});
 	res.render('success')
 })
