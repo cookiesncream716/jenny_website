@@ -9,9 +9,7 @@ img {
 .pic{
 	padding-top: 10%;
 }
-/*.pic, #contact_form{
-	vertical-align: bottom;
-}*/
+
 h4 {
 	color: blue;
 }
@@ -19,4 +17,7 @@ h4 {
 button {
 	color: white;
 	background-color: red;
+}
+.before_after {
+	width: 250px;
 }

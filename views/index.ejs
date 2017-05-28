@@ -11,7 +11,20 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+		<!-- JQuery -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 		<link rel='stylesheet' type='text/css' href='style.css'>
+
+		<script type='text/javascript'>
+			$(document).ready(function(){
+				$('.before_after').click(function(){
+					var temp = $(this).attr('src');
+					$(this).attr('src', $(this).attr('alt-src'));
+					$(this).attr('alt-src', temp);
+				})
+			})
+		</script>
 	</head>
 	<body class='container'>
 		<h1>Walker Services</h1>
@@ -45,6 +58,11 @@
 			</div>
 			<img src='cleaning_bucket.jpg' class='col-md-offset-1 col-md-3 pic'>
 			<!-- <img src='lawnmower.png' class='col-md-3 pic'> -->
+		</div>
+		<div class='row'>
+			<img class='before_after' src='dirty_toilet.jpg' alt-src='clean_toilet.jpg'/>
+			<img class='before_after' src='dirty_tub.jpg' alt-src='clean_tub.jpg'
+			<h5>Click on a picture to show before and after</h5>
 		</div>
 	</body>
 </html>
