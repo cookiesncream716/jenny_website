@@ -2,8 +2,9 @@
 	padding-bottom: 20px
 }
 .jumbotron {
-	background-image: url('/sparkling_counter.jpg');
-	height: 450px;
+	/*background-image: url('/sparkling_counter.jpg');*/
+	background: url('/sparkling_counter.jpg') no-repeat center;
+	height: 490px;
 }
 .jumbotron h1 {
 	font-family: Impact;
@@ -16,16 +17,14 @@
 	border: 1px solid black; 
 }*/
 .diff {
-	background-color: green
+	background-color: black
 }
 
 .pic{
-	height: auto;
-	/*background-color: black;*/
-	padding: 5px
+	padding: 5px;
+	height: auto
 }
 .pic2 {
-	/*background-color: black;*/
 	padding: 5px;
 	height: 300px
 }
