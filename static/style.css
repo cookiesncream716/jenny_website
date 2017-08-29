@@ -1,23 +1,46 @@
-h1 {
+.container {
+	padding-bottom: 20px
+}
+.jumbotron {
+	background-image: url('/sparkling_counter.jpg');
+	height: 450px;
+}
+.jumbotron h1 {
 	font-family: Impact;
 	font-size: 8.5em;
+	font-weight: bold;
 	text-align: center;
+	padding-top: 90px
 }
-img {
+/*img {
 	border: 1px solid black; 
-}
-.pic{
-	padding-top: 10%;
+}*/
+.diff {
+	background-color: green
 }
 
-h4 {
-	color: blue;
+.pic{
+	height: auto;
+	/*background-color: black;*/
+	padding: 5px
 }
+.pic2 {
+	/*background-color: black;*/
+	padding: 5px;
+	height: 300px
+}
+#apron {
+	width: 30%;
+	margin-top: 15%
+}
+/*h4 {
+	color: blue;
+}*/
 
 button {
 	color: white;
-	background-color: red;
+	background-color: black;
 }
-.before_after {
+/*.before_after {
 	width: 250px;
-}
+}*/
